@@ -32,7 +32,7 @@ ggplot(steps_int, aes(interval, steps))+geom_line(size=1)+labs(title="Average st
 steps_int$interval[steps_int$steps==max(steps_int$steps)]
 
 ```
-
+![plot1](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot2_.png)
 ## Imputing missing values
 ```{r}
 activity_na<-subset(activity, is.na(steps))
@@ -58,6 +58,7 @@ mean(steps_pd_inp$steps)- mean(steps_pd$steps)
 median(steps_pd_inp$steps)-median(steps_pd$steps)
 
 ```
+![plot1](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot3_.png)
 
 ## Are there differences in activity patterns between weekdays and weekends?
 ```{r}
@@ -71,3 +72,4 @@ library(lattice)
 xyplot(steps ~ interval| factor(days), data=steps_int_wd, layout=c(1,2), type="l")
 
 ```
+![plot1](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot4_.png)
