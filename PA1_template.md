@@ -11,7 +11,7 @@ activity <- read.csv("./activity.csv", na.strings = "NA")
 activity$date<-as.Date(activity$date)
 activity_<-subset(activity, !is.na(steps))
 ```
-![alt tag](PeerAssessment1/Plots/plot1_.png)
+
 
 ##What is mean total number of steps taken per day?
 ```{r}
@@ -25,7 +25,7 @@ median(steps_pd$steps)
 ```
 The mean is 10766.19 and the median is 10765
 
-![alt tag](PeerAssessment1/Plots/plot1_.png)
+![plot1](PeerAssessment1/Plots/plot1_.png)
 
 ##What is the average daily activity pattern?
 ```{r}
@@ -37,7 +37,7 @@ steps_int$interval[steps_int$steps==max(steps_int$steps)]
 ```
  The maximum number of steps is in the interval 835
  
-![alt tag](RepData_PeerAssessment1/Plots/plot2_.png)
+![plot2](RepData_PeerAssessment1/Plots/plot2_.png)
 
 ##Imputing missing values
 ```{r}
@@ -67,7 +67,7 @@ mean(steps_pd_inp$steps)- mean(steps_pd$steps)
 median(steps_pd_inp$steps)-median(steps_pd$steps)
 
 ```
-![alt tag](RepData_PeerAssessment1/Plots/plot3_.png)
+![plot3](RepData_PeerAssessment1/Plots/plot3_.png)
 The mean in the imputing missing data is 10766.19 and the median is 10766.19
 The difference between the first data and the imputing missing data are just in the median wich decrease 1.2
 
@@ -84,4 +84,4 @@ library(lattice)
 xyplot(steps ~ interval| factor(days), data=steps_int_wd, layout=c(1,2), type="l")
 
 ```
-![alt tag](RepData_PeerAssessment1/Plots/plot4_.png)
+![plot4](RepData_PeerAssessment1/Plots/plot4_.png)
