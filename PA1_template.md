@@ -22,7 +22,7 @@ ggplot(steps_pd, aes(steps, fill=..count..))+geom_histogram(binwidth = 5000)+ xl
 mean(steps_pd$steps)
 median(steps_pd$steps)
 ```
-The 'mean' is 10766.19 and the 'median' is 10765
+The mean is 10766.19 and the median is 10765
 
 
 ##What is the average daily activity pattern?
@@ -63,7 +63,7 @@ mean(steps_pd_inp$steps)- mean(steps_pd$steps)
 median(steps_pd_inp$steps)-median(steps_pd$steps)
 
 ```
-The 'mean' in the imputing missing data is 10766.19 and the 'median' is 10766.19
+The mean in the imputing missing data is 10766.19 and the median is 10766.19
 The difference between the first data and the imputing missing data are just in the median wich decrease 1.2
 
 ##Are there differences in activity patterns between weekdays and weekends?
