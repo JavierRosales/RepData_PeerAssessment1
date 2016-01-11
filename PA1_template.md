@@ -23,7 +23,7 @@ mean(steps_pd$steps)
 median(steps_pd$steps)
 ```
 The mean is 10766.19 and the median is 10765
-![plots](RepData_PeerAssessment1/Plots/plot1_.png)
+image::RepData_PeerAssessment1/Plots/plot1_.png
 
 ##What is the average daily activity pattern?
 ```{r}
