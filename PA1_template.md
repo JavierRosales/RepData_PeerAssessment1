@@ -37,7 +37,7 @@ steps_int$interval[steps_int$steps==max(steps_int$steps)]
 ```
  The maximum number of steps is in the interval 835
  
-![plot2](RepData_PeerAssessment1/Plots/plot2_.png)
+![plot2](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot2_.png)
 
 ##Imputing missing values
 ```{r}
@@ -67,7 +67,7 @@ mean(steps_pd_inp$steps)- mean(steps_pd$steps)
 median(steps_pd_inp$steps)-median(steps_pd$steps)
 
 ```
-![plot3](RepData_PeerAssessment1/Plots/plot3_.png)
+![plot3](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot3_.png)
 The mean in the imputing missing data is 10766.19 and the median is 10766.19
 The difference between the first data and the imputing missing data are just in the median wich decrease 1.2
 
@@ -84,4 +84,4 @@ library(lattice)
 xyplot(steps ~ interval| factor(days), data=steps_int_wd, layout=c(1,2), type="l")
 
 ```
-![plot4](RepData_PeerAssessment1/Plots/plot4_.png)
+![plot4](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot4_.png)
