@@ -22,6 +22,7 @@ ggplot(steps_pd, aes(steps, fill=..count..))+geom_histogram(binwidth = 5000)+ xl
 mean(steps_pd$steps)
 median(steps_pd$steps)
 ```
+![plot1](https://github.com/JavierRosales/RepData_PeerAssessment1/blob/master/Plots/plot1_.png)
 
 ## What is the average daily activity pattern?
 ```{r}
